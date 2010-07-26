@@ -1,0 +1,10 @@
+function boolean = checkForMatch(matrix, expression, done)
+    boolean = 0;
+    for a = 1:length(matrix)
+        if (strcmp(cell2mat(matrix(a)),expression))
+            boolean = 1;
+            return;
+        end
+    end
+
+end
